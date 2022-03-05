@@ -1,0 +1,794 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Rubik-Regular400";
+  src: url("../fonts/Rubik-Regular400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik-Medium500";
+  src: url("../fonts/Rubik-Medium500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik-Bold700";
+  src: url("../fonts/Rubik-Bold700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pacifico-Regular400";
+  src: url("../fonts/Pacifico-Regular400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 15px;
+  background: #FFFFFF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.menu .nav__menu .menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.menu .nav__menu .menu__list .menu__item {
+  padding-right: 75px;
+}
+.menu .nav__menu .menu__list .menu__item .menu__link {
+  text-decoration: none;
+  color: #000000;
+}
+.menu .nav__menu .menu__list .menu__item .menu__link:hover {
+  color: #EC482F;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 149px;
+}
+.service .service__title {
+  background-color: yellow;
+}
+.service .printing {
+  background-image: url(/img/printing.png);
+  display: flex;
+  width: 100%;
+  height: 773px;
+  background-color: purple;
+}
+.service .printing .printing__text {
+  margin: auto;
+  text-align: center;
+}
+.service .printing .printing__text .printing__p {
+  font-family: "Pacifico-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 48px;
+  color: #C828A0;
+  margin-bottom: 13px;
+}
+.service .printing .printing__text .printing__text1 {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #FFFFFF;
+}
+.service .printing .printing__text .printing__text2 {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+.service .printing .printing__text .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 60px;
+  background: #C828A0;
+  margin: auto;
+}
+.service .printing .printing__text .button .button__text {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.cost {
+  margin-bottom: 127px;
+}
+.cost .cost__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cost .cost__text .cost__text-title {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #0C0C0C;
+  margin-bottom: 36px;
+  margin-left: 56px;
+}
+.cost .cost__text .cost__text-title strong {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 77px;
+  color: #0C0C0C;
+}
+.cost .cost__text .cost__text-subtitle {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 18px;
+  color: #9A9898;
+  margin-bottom: 100px;
+}
+.cost .cost__fon {
+  background-image: url(../img/cost__fon.png);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1037px;
+  background-color: purple;
+}
+.cost .cost__fon .menu__cost {
+  margin-top: 62px;
+}
+.cost .cost__fon .menu__cost .cost__menu {
+  margin-bottom: 56px;
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 20px;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item {
+  padding-right: 124px;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link:nth-child(2) {
+  padding-left: 11px;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link:last-child {
+  padding-left: 37px;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link:after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #59C2FF;
+  content: "";
+  transition: width 0.3s ease-out;
+  margin-top: 20px;
+}
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link:hover:after,
+.cost .cost__fon .menu__cost .cost__menu .cost__list .cost__item .cost__link:focus:after {
+  width: 100%;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner {
+  display: flex;
+  justify-content: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .calculator__text .calculator__calculator {
+  font-family: "Pacifico-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 48px;
+  color: #C828A0;
+  margin-bottom: 18px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .calculator__text .calculator__print {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .calculator__text .calculator__order {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill {
+  width: 600px;
+  height: 711px;
+  background: #59C2FF;
+  margin-left: 119px;
+  padding-top: 33px;
+  margin-right: -40px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material {
+  display: flex;
+  align-items: center;
+  padding-left: 41px;
+  margin-bottom: 32px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material .material__title {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material .material__subtitle {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  padding-left: 81px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material .material__subtitle:after {
+  border-bottom: 1px dashed #fff;
+  display: block;
+  left: 0;
+  width: 0;
+  height: 3px;
+  content: "";
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material .material__subtitle:hover:after,
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .material .material__subtitle:focus:after {
+  width: 100%;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size {
+  display: flex;
+  align-items: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__text {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  margin-left: 41px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__search {
+  margin-left: 56px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__search .size__input {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  width: 130px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  text-align: right;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__search input[name=s] {
+  width: 130px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  text-align: right;
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__x {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  margin-left: 21px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp {
+  margin-left: 210px;
+  margin-bottom: 24px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .cmyk {
+  padding-top: 25px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .label {
+  display: flex;
+  margin-bottom: 22px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .checkbox {
+  display: none;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .fake {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: relative;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #137DBA;
+  border-radius: 3px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .checkbox:checked + .fake::before {
+  opacity: 1;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .stamp .text {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  margin-left: 17px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation {
+  display: flex;
+  align-items: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__text {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  margin-left: 41px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title {
+  display: flex;
+  align-items: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__plus {
+  margin-left: 117px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__plus .circulation__plus-title {
+  color: #59C2FF;
+  width: 4px;
+  height: 16px;
+  background: #59C2FF;
+  border-radius: 3px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__plus .circulation__plus-subtitle {
+  width: 4px;
+  margin-left: -4px;
+  height: 16px;
+  background: #59C2FF;
+  border-radius: 3px;
+  transform: rotate(90deg);
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__search .circulation__input {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  width: 216px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  text-align: right;
+  margin-left: 23px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__search input[name=m] {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  width: 216px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  text-align: right;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__minus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 23px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 100px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__minus .circulation__minus-title {
+  width: 4px;
+  height: 16px;
+  background: #59C2FF;
+  border-radius: 3px;
+  transform: rotate(90deg);
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy {
+  margin-top: 43px;
+  display: flex;
+  align-items: baseline;
+  margin-left: 165px;
+  margin-bottom: 32px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy .buy__price {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+  padding-right: 9px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy .buy__figure {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  font-family: "Rubik-Regular400";
+  font-weight: 400;
+  font-size: 77px;
+  color: #F7F7F7;
+  padding-right: 9px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy .buy__rub {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 60px;
+  background: #4E3B89;
+  border-radius: 100px;
+  margin-left: 165px;
+}
+.cost .cost__fon .menu__cost .calculator__conteiner .fill .buy__button .buy__button-title {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #F7F7F7;
+}
+
+.advantages {
+  margin-bottom: 139px;
+}
+
+.advantages__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 115px;
+}
+
+.advantages__text-title {
+  font-family: "Pacifico-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 48px;
+  color: #C828A0;
+}
+
+.advantages__text-subtitle {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #0C0C0C;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 230px;
+}
+
+.services__title {
+  width: 370px;
+  height: 544px;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 45px;
+}
+
+.services__title-img {
+  margin-top: 70px;
+  margin-bottom: 74px;
+}
+
+.services__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__text-title {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 20px;
+  color: #0C0C0C;
+  margin-bottom: 23px;
+}
+
+.services__text-subtitle {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9A9898;
+  text-align: center;
+  padding: 0px 26px;
+  line-height: 24px;
+}
+
+.advantages__printing {
+  background-image: url(/img/printing.png);
+  display: flex;
+  background-color: purple;
+}
+
+.advantages__printing-text {
+  margin: auto;
+  text-align: center;
+}
+
+.advantages__printing-p {
+  font-family: "Pacifico-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 48px;
+  color: #C828A0;
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+
+.advantages__printing-text1 {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 77px;
+  color: #FFFFFF;
+}
+
+.advantages__printing-text2 {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.advantages__button {
+  width: 270px;
+  height: 60px;
+  background: #C828A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.advantages__button-text {
+  font-family: "Rubik-Bold700", "Arial", "San-serif";
+  font-weight: 700;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.remained {
+  margin-bottom: 169px;
+}
+
+.advantages__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 91px;
+}
+
+.advantages__text-title {
+  font-family: "Pacifico-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 48px;
+  color: #C828A0;
+  margin-bottom: 19px;
+}
+
+.advantages__text-subtitle {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 77px;
+  color: #0C0C0C;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.form__name {
+  width: 420px;
+  height: 60px;
+  background: #EBEBEB;
+  margin-right: 57px;
+}
+
+input[placeholder="Ваше имя"] {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #9A9898;
+  text-align: center;
+  width: 420px;
+  height: 60px;
+  background: #EBEBEB;
+  margin-right: 57px;
+  border: #EBEBEB;
+}
+
+.form__mail {
+  width: 420px;
+  height: 60px;
+  background: #EBEBEB;
+}
+
+input[placeholder="Телефон или E-Mail"] {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #9A9898;
+  text-align: center;
+  width: 420px;
+  height: 60px;
+  background: #EBEBEB;
+  margin-right: 57px;
+  border: #EBEBEB;
+}
+
+.form__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.form__message-title {
+  width: 896px;
+  height: 250px;
+  background: #EBEBEB;
+}
+
+textarea {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #9A9898;
+  width: 896px;
+  height: 250px;
+  background: #EBEBEB;
+  padding-top: 20px;
+  padding-left: 27px;
+  border: #EBEBEB;
+}
+
+input[placeholder="Введите ваше сообщение"] {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #9A9898;
+  text-align: center;
+  width: 896px;
+  height: 250px;
+  background: #EBEBEB;
+}
+
+.advantages__buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 153px;
+}
+
+.advantages__buttom-text {
+  font-family: "Rubik-Medium500", "Arial", "San-serif";
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 60px;
+  background: #59C2FF;
+  color: #F7F7F7;
+}
+
+.advantages__subtitle {
+  background: #EBEBEB;
+}
+
+.work__img {
+  flex: 1 1 auto;
+  text-align: center;
+  margin-bottom: 183px;
+}
+
+.stripe {
+  width: 100%;
+  height: 107px;
+  background: #53398C;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__stripe {
+  width: 100%;
+  height: 52px;
+  background: #FFD519;
+}
+.footer .footer__stripe .footer__menu {
+  font-family: "Rubik-Regular400", "Arial", "San-serif";
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 9px;
+  margin-left: 486px;
+}
+.footer .footer__stripe .footer__menu .footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer .footer__stripe .footer__menu .footer__list .footer__item .footer__link {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}

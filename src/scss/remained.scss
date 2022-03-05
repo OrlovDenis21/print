@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixin";
+.remained{
+    margin-bottom: 169px;
+}
+.advantages__text{
+    @include flexbox;
+    // display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: 91px;
+} 
+.advantages__text-title{
+    @include font($name: $Pacifico-Regular, $fontSize: $mediumSize,);
+    color: $pink-color;
+    margin-bottom: 19px;
+}
+.advantages__text-subtitle{
+    @include font($fontSize:$headingSize);
+    color: $textsubtitle-color;
+}
+.form{
+    @include flexbox;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin-bottom: 29px;
+}
+.form__name{
+    width: 420px;
+    height: 60px;
+    background: $gray-color;
+    margin-right: 57px;
+}
+input[placeholder="Ваше имя"]{
+    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight: $mediumWeight);
+    color: #9A9898;
+    text-align: center;
+    width: 420px;
+    height: 60px;
+    background: $gray-color;
+    margin-right: 57px;
+    border: #EBEBEB;
+}
+.form__mail{
+    width: 420px;
+    height: 60px;
+    background: $gray-color;
+}
+input[placeholder="Телефон или E-Mail"]{
+    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight: $mediumWeight);
+    color: #9A9898;
+    text-align: center;
+    width: 420px;
+    height: 60px;
+    background: $gray-color;
+    margin-right: 57px;
+    border: #EBEBEB;
+}
+.form__message{
+    @include flexbox;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin-bottom: 35px;
+}        
+.form__message-title{
+    width: 896px;
+    height: 250px;
+    background: $gray-color;
+}
+textarea{
+    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight: $mediumWeight);
+    color: #9A9898;
+    width: 896px;
+    height: 250px;
+    background: $gray-color;
+    padding-top: 20px;
+    padding-left: 27px;
+    border: #EBEBEB;
+}
+input[placeholder="Введите ваше сообщение"]{
+    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight: $mediumWeight);
+    color: #9A9898;
+    text-align: center;
+    width: 896px;
+    height: 250px;
+    background: $gray-color;
+}
+.advantages__buttom{
+    @include flexbox;
+    margin-bottom: 153px;
+} 
+.advantages__buttom-text{
+    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight: $mediumWeight);
+    @include flexbox;
+    width: 264px;
+    height: 60px;
+    background: $skyblue-color;
+    color: $whitesmoke-color;
+}
+.advantages__subtitle {
+    background: $gray-color;
+}

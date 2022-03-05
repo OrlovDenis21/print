@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixin";
+.advantages{
+    margin-bottom: 139px;
+}
+.advantages__text{
+    @include flexbox;
+    flex-direction: column;
+    margin-bottom: 115px;
+} 
+.advantages__text-title{
+    @include font($name: $Pacifico-Regular, $fontSize: $mediumSize,);
+    color: #C828A0;
+}
+.advantages__text-subtitle{
+    @include font($fontSize:$headingSize);
+    color: $textsubtitle-color;
+}
+.services{
+    @include flexbox;
+    margin-bottom: 230px;
+}
+.services__title{
+    width: 370px;
+    height: 544px;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 45px;
+} 
+.services__title-img{
+    margin-top: 70px;
+    margin-bottom: 74px;
+} 
+                
+.services__text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+.services__text-title{
+    @include font($name: $Rubik-Bold, $fontSize: $boldSize, $fontWeight: $boldWeight);
+    color: $textsubtitle-color;
+    margin-bottom: 23px;
+}
+.services__text-subtitle{
+    @include font($fontSize: $titleSize);
+    color: #9A9898;
+    text-align: center;
+    padding: 0px 26px;
+    line-height: 24px;
+}
+.advantages__printing {
+    background-image: url(/img/printing.png);
+    display: flex;
+    background-color: $purple-color;
+}
+.advantages__printing-text{
+    margin: auto;
+    text-align: center;
+}
+.advantages__printing-p {
+    @include font($name: $Pacifico-Regular, $fontSize: $mediumSize,);
+    color: $pink-color;
+    margin-top: 11px;
+    margin-bottom: 14px;
+}
+.advantages__printing-text1 {
+    @include font($name: $Rubik-Bold, $fontWeight: $boldWeight);
+    color: $white-color;
+}
+.advantages__printing-text2{
+    @include font;
+    color: $white-color;
+    margin-bottom: 48px;
+} 
+.advantages__button{
+    width: 270px;
+    height: 60px;
+    background: $pink-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.advantages__button-text{
+    @include font($name:$Rubik-Bold, $fontSize:$textSize, $fontWeight:$boldWeight);
+    color: $white-color;
+}

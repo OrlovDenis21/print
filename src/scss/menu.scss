@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixin";
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    @include font($name: $Rubik-Medium, $fontSize: $textSize, $fontWeight:$mediumWeight);
+    background: $white-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .nav__menu{
+        .menu__list{
+            @include flexbox;
+            list-style-type: none;
+            .menu__item{
+                padding-right: 75px;
+                .menu__link{
+                    text-decoration: none;
+                    color: $black-color;
+                    &:hover{
+                        color: $red-color;
+                    }
+                }
+                
+            }    
+        }
+    }
+}

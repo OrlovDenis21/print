@@ -1,0 +1,325 @@
+@import "variables";
+@import "mixin";
+.cost{
+    margin-bottom: 127px;
+
+    .cost__text{
+        @include flexbox;
+        flex-direction: column;
+        .cost__text-title{
+            @include font;
+            color: $textsubtitle-color;
+            margin-bottom: 36px;
+            margin-left: 56px;
+        }
+        .cost__text-title strong{
+            @include font($name: $Rubik-Bold, $fontWeight:$boldWeight);
+            color: $textsubtitle-color;
+        }
+    
+        .cost__text-subtitle {
+            @include font($name: $Rubik-Medium, $fontSize: $regularSize, $fontWeight:$mediumWeight);
+            color: #9A9898;
+            margin-bottom: 100px;
+        }
+    }
+    .cost__fon{
+        background-image: url(../img/cost__fon.png);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 1037px;
+        background-color: $purple-color;
+        .menu__cost{
+            margin-top: 62px;
+            .cost__menu{
+                margin-bottom: 56px;
+                @include font($name: $Rubik-Bold, $fontSize: $boldSize, $fontWeight: $boldWeight);
+                .cost__list{
+                    @include flexbox;
+                    list-style-type: none;
+                    .cost__item{
+                        padding-right: 124px;
+                        .cost__link:nth-child(2){
+                            padding-left: 11px;
+                        }
+                        .cost__link:last-child{
+                            padding-left: 37px;
+                        }
+                        .cost__link{
+                            text-decoration: none;
+                            color: $white-color;
+                            position: relative;
+                            cursor: pointer;
+                            text-decoration: none; 
+                        }
+                        .cost__link:after {
+                            display: block;
+                            left: 0; 
+                            width: 0;
+                            height: 3px; 
+                            background-color: #59C2FF;
+                            content: "";
+                            transition: width 0.3s ease-out; 
+                            margin-top: 20px;
+                            
+                        }
+                        .cost__link:hover:after,
+                        .cost__link:focus:after {
+                            width: 100%; 
+                        }
+                    }
+                }
+            }
+            .calculator__conteiner{
+                display: flex;
+                justify-content: center;
+                .calculator__text{
+                    .calculator__calculator{
+                        @include font($name: $Pacifico-Regular, $fontSize: $mediumSize,);
+                        color: $pink-color;
+                        margin-bottom: 18px;
+                    }
+                    .calculator__print{
+                        @include font($fontSize:$headingSize);
+                        color: $white-color;
+                        margin-bottom: 28px;
+                    }
+                    .calculator__order {
+                        @include font($name: $Rubik-Medium, $fontSize: $regularSize, $fontWeight:$mediumWeight);
+                        color: $white-color;
+                    }
+                }
+                .fill{
+                    width: 600px;
+                    height: 711px;
+                    background: $skyblue-color;
+                    margin-left: 119px;
+                    padding-top: 33px;
+                    margin-right: -40px;
+                    .material{
+                        display: flex;
+                        align-items: center;
+                        padding-left: 41px;
+                        margin-bottom: 32px;
+                        .material__title{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                        }
+                        .material__subtitle{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            padding-left: 81px;
+                            cursor: pointer;
+                            text-decoration: none; 
+                        }
+                        .material__subtitle:after{
+                            border-bottom: 1px dashed #fff;
+                            display: block;
+                            left: 0; 
+                            width: 0;
+                            height: 3px; 
+                            content: "";
+                        } 
+                        .material__subtitle:hover:after,
+                        .material__subtitle:focus:after {
+                            width: 100%; 
+                        }
+                    }
+                    .size{
+                        display: flex;
+                        align-items: center;
+                        .size__text{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            margin-left: 41px;
+                        }
+                        .size__search{
+                            margin-left: 56px;
+                            .size__input{
+                                @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                                width: 130px;
+                                height: 60px;
+                                border-radius: 100px;
+                                background-color: $white-color;
+                                text-align: right;
+                                color: $black-color;
+                                @include flexbox;
+                            }
+                            input[name="s"]{
+                                width: 130px;
+                                height: 60px;
+                                border-radius: 100px;
+                                background-color: $white-color;
+                                text-align: right;
+                                @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                                color: $black-color;
+                            }
+                        }
+                        .size__x{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            margin-left: 21px;
+                        }
+                    }
+                    .stamp{
+                        margin-left: 210px;
+                        margin-bottom: 24px;
+                        .cmyk{
+                            padding-top: 25px;
+                        }
+                        .label{
+                            display: flex;
+                            margin-bottom: 22px;
+                        }
+                        .checkbox{
+                            display: none;
+                        }
+                        .fake{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border: 1px solid $white-color;
+                            background-color: $white-color;
+                            border-radius:5px;
+                            position: relative;
+                        }
+                        .fake::before{
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            background: #137DBA;
+                            border-radius: 3px;
+                            opacity: 0;
+                            transition: .2s;
+                        }
+                        .checkbox:checked + .fake::before{
+                            opacity: 1;
+                        }
+                        .text{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            margin-left: 17px;
+                        }
+                    }
+                    .circulation{
+                        display: flex;
+                        align-items: center;
+                        .circulation__text{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            margin-left: 41px;
+                        }
+                        .circulation__title{
+                            display: flex;
+                            align-items: center;
+                            .circulation__plus{
+                                margin-left: 117px;
+                                width: 30px;
+                                height: 30px;
+                                background: $white-color;
+                                border-radius: 100px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .circulation__plus-title{
+                                    color: $skyblue-color;
+                                    width: 4px;
+                                    height: 16px;
+                                    background: $skyblue-color;
+                                    border-radius: 3px;
+                                }
+                                .circulation__plus-subtitle{
+                                    width: 4px;
+                                    margin-left: -4px;
+                                    height: 16px;
+                                    background: $skyblue-color;
+                                    border-radius: 3px;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            .circulation__search{
+                                .circulation__input{
+                                    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                                    @include flexbox;
+                                    color: $black-color;
+                                    width: 216px;
+                                    height: 60px;
+                                    border-radius: 100px;
+                                    background-color: $white-color;
+                                    text-align: right;
+                                    margin-left: 23px;
+                                }
+                                input[name="m"]{
+                                    @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                                    color: $black-color;
+                                    width: 216px;
+                                    height: 60px;
+                                    border-radius: 100px;
+                                    background-color: $white-color;
+                                    text-align: right;
+                                }
+                            }
+                            .circulation__minus{
+                                @include flexbox;
+                                margin-left: 23px;
+                                width: 30px;
+                                height: 30px;
+                                background: $white-color;
+                                border-radius: 100px;
+                                .circulation__minus-title{
+                                    width: 4px;
+                                    height: 16px;
+                                    background: $skyblue-color;
+                                    border-radius: 3px;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+                    .buy{
+                        margin-top: 43px;
+                        display: flex;
+                        align-items: baseline;
+                        margin-left: 165px;
+                        margin-bottom: 32px;
+                        .buy__price{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                            padding-right: 9px;
+                        }
+                        .buy__figure{
+                            @include font;
+                            font-family: 'Rubik-Regular400';
+                            font-weight: 400;
+                            font-size: 77px;
+                            color: $whitesmoke-color;
+                            padding-right: 9px;
+                        }
+                        .buy__rub{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                        }
+                    }
+                    .buy__button{
+                        @include flexbox;
+                        width: 264px;
+                        height: 60px;
+                        background: #4E3B89;
+                        border-radius: 100px;
+                        margin-left: 165px;
+                        .buy__button-title{
+                            @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
+                            color: $whitesmoke-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@mixin font($name: $Rubik-Regular, $fontSize: $headingSize, $fontWeight:$fontWeight) {
+    font-family: $name;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
