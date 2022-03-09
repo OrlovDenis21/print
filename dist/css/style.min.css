@@ -140,7 +140,7 @@
   margin-bottom: 100px;
 }
 .cost .cost__fon {
-  background-image: url(../img/cost__fon.png);
+  background-image: url(../img/cost_fon.png);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -270,6 +270,7 @@
 }
 .cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__search {
   margin-left: 56px;
+  border: 1px dashed #fff;
 }
 .cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__search .size__input {
   font-family: "Rubik-Medium500", "Arial", "San-serif";
@@ -295,6 +296,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #000000;
+  border: #fff;
 }
 .cost .cost__fon .menu__cost .calculator__conteiner .fill .size .size__x {
   font-family: "Rubik-Medium500", "Arial", "San-serif";
@@ -415,6 +417,7 @@
   border-radius: 100px;
   background-color: #FFFFFF;
   text-align: right;
+  border: #fff;
 }
 .cost .cost__fon .menu__cost .calculator__conteiner .fill .circulation .circulation__title .circulation__minus {
   display: flex;
@@ -522,7 +525,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 45px;
+  margin-right: 24px;
 }
 
 .services__title-img {
@@ -705,6 +708,10 @@ textarea {
   border: #EBEBEB;
 }
 
+textarea {
+  resize: none;
+}
+
 input[placeholder="Введите ваше сообщение"] {
   font-family: "Rubik-Medium500", "Arial", "San-serif";
   font-weight: 500;
@@ -783,6 +790,10 @@ input[placeholder="Введите ваше сообщение"] {
 
 * {
   box-sizing: border-box;
+}
+
+* {
+  outline: none;
 }
 
 body, html {

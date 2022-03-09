@@ -2,7 +2,7 @@
 @import "mixin";
 .cost{
     margin-bottom: 127px;
-
+    
     .cost__text{
         @include flexbox;
         flex-direction: column;
@@ -24,7 +24,7 @@
         }
     }
     .cost__fon{
-        background-image: url(../img/cost__fon.png);
+        background-image: url(../img/cost_fon.png);
         display: flex;
         justify-content: center;
         width: 100%;
@@ -136,6 +136,7 @@
                         }
                         .size__search{
                             margin-left: 56px;
+                            border: 1px dashed #fff;
                             .size__input{
                                 @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
                                 width: 130px;
@@ -145,6 +146,7 @@
                                 text-align: right;
                                 color: $black-color;
                                 @include flexbox;
+                                
                             }
                             input[name="s"]{
                                 width: 130px;
@@ -154,6 +156,7 @@
                                 text-align: right;
                                 @include font($name: $Rubik-Medium, $fontSize: $titleSize, $fontWeight:$mediumWeight);
                                 color: $black-color;
+                                border: #fff;
                             }
                         }
                         .size__x{
@@ -263,6 +266,7 @@
                                     border-radius: 100px;
                                     background-color: $white-color;
                                     text-align: right;
+                                    border: #fff;
                                 }
                             }
                             .circulation__minus{
